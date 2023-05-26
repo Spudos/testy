@@ -36,17 +36,42 @@
           <%= @result_today.bud_ord_sum %></p>
           <p>Sales Value: £
           <%= @result_today.bud_val_sum %></p>
-          <p>Sales Value Varience: £
-          <%= @result_today.val_sum - @result_today.bud_val_sum %></p>
+          <p>
+          <%if @result_today.val_sum-@result_today.bud_val_sum >= 0 %>
+          <span id="pos">
+          Sales Value Varience: £
+          <%= @result_today.val_sum - @result_today.bud_val_sum %>
+          </span>
+          <% else %>
+           <span id="neg">
+           Sales Value Varience: £
+          <%= @result_today.val_sum - @result_today.bud_val_sum %>
+          </span>
+          <% end %>
+          </p>
       </div>
       <div class="col" id="py">
           <p>Total Orders:
           <%= @result_today.py_ord_sum %></p>
           <p>Sales Value: £
           <%= @result_today.py_val_sum %></p>
-          <p>Sales Value Varience: £
-          <%= @result_today.val_sum - @result_today.py_val_sum %></p>
-        </div>
+          
+          <p>
+          <%if @result_today.val_sum-@result_today.py_val_sum >= 0 %>
+          <span id="pos">
+          Sales Value Varience: £
+          <%= @result_today.val_sum - @result_today.py_val_sum %>
+          </span>
+          <% else %>
+           <span id="neg">
+           Sales Value Varience: £
+          <%= @result_today.val_sum - @result_today.py_val_sum %>
+          </span>
+          <% end %>
+          </p>
+
+      </div>
+
     </div> 
   </div>    
 </div>
@@ -82,25 +107,47 @@
     <div class="row">
       <div class="col">
           <p>Total Orders: 
-          <%= @result_month.ord_sum %> </p>
+          <%= @result_year.ord_sum %> </p>
           <p>Sales Value: £  
-          <%= @result_month.val_sum %></p>
+          <%= @result_year.val_sum %></p>
       </div>
       <div class="col" id="bud">
           <p>Total Orders:
-          <%= @result_month.bud_ord_sum %></p>
+          <%= @result_year.bud_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result_month.bud_val_sum %></p>
-                    <p>Sales Value Varience: £
-          <%= @result_month.val_sum - @result_month.bud_val_sum %></p>
+          <%= @result_year.bud_val_sum %></p>
+          <p>
+          <%if @result_year.val_sum-@result_year.bud_val_sum >= 0 %>
+          <span id="pos">
+          Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.bud_val_sum %>
+          </span>
+          <% else %>
+           <span id="neg">
+           Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.bud_val_sum %>
+          </span>
+          <% end %>
+          </p>
       </div>
       <div class="col" id="py">
           <p>Total Orders:
-          <%= @result_month.py_ord_sum %></p>
+          <%= @result_year.py_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result_month.py_val_sum %></p>
-                    <p>Sales Value Varience: £
-          <%= @result_month.val_sum - @result_month.py_val_sum %></p>
+          <%= @result_year.py_val_sum %></p>
+          <p>
+          <%if @result_year.val_sum-@result_year.py_val_sum >= 0 %>
+          <span id="pos">
+          Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.py_val_sum %>
+          </span>
+          <% else %>
+           <span id="neg">
+           Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.py_val_sum %>
+          </span>
+          <% end %>
+          </p>
         </div>
     </div> 
   </div>    
@@ -146,16 +193,38 @@
           <%= @result_year.bud_ord_sum %></p>
           <p>Sales Value: £
           <%= @result_year.bud_val_sum %></p>
-                          <p>Sales Value Varience: £
-          <%= @result_year.val_sum - @result_year.bud_val_sum %></p>
+<p>
+          <%if @result_year.val_sum-@result_year.bud_val_sum >= 0 %>
+          <span id="pos">
+          Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.bud_val_sum %>
+          </span>
+          <% else %>
+           <span id="neg">
+           Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.bud_val_sum %>
+          </span>
+          <% end %>
+          </p>
       </div>
       <div class="col" id="py">
           <p>Total Orders:
           <%= @result_year.py_ord_sum %></p>
           <p>Sales Value: £
           <%= @result_year.py_val_sum %></p>
-                              <p>Sales Value Varience: £
-          <%= @result_year.val_sum - @result_year.py_val_sum %></p>
+          <p>
+          <%if @result_year.val_sum-@result_year.py_val_sum >= 0 %>
+          <span id="pos">
+          Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.py_val_sum %>
+          </span>
+          <% else %>
+           <span id="neg">
+           Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.py_val_sum %>
+          </span>
+          <% end %>
+          </p>
         </div>
     </div> 
   </div>    
