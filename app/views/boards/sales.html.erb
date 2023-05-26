@@ -10,13 +10,13 @@
   <div class="container text-center">
     <div class="row">
       <div class="col">
-          <h2>Actual</h2>
+          <h3>Actual</h3>
       </div>
       <div class="col" id="bud">
-          <h2>Budget</h2>
+          <h3>Budget</h3>
       </div>
       <div class="col" id="py">
-          <h2>Last year</h2>
+          <h3>Last year</h3>
       </div>
     </div> 
   </div>    
@@ -27,21 +27,25 @@
     <div class="row">
       <div class="col">
           <p>Total Orders: 
-          <%= @result.ord_sum %> </p>
+          <%= @result_today.ord_sum %> </p>
           <p>Sales Value: £  
-          <%= @result.val_sum %></p>
+          <%= @result_today.val_sum %></p>
       </div>
       <div class="col" id="bud">
           <p>Total Orders:
-          <%= @result.ord_sum %></p>
+          <%= @result_today.bud_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result.val_sum %></p>
+          <%= @result_today.bud_val_sum %></p>
+          <p>Sales Value Varience: £
+          <%= @result_today.val_sum - @result_today.bud_val_sum %></p>
       </div>
       <div class="col" id="py">
           <p>Total Orders:
-          <%= @result.ord_sum %></p>
+          <%= @result_today.py_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result.val_sum %></p>
+          <%= @result_today.py_val_sum %></p>
+          <p>Sales Value Varience: £
+          <%= @result_today.val_sum - @result_today.py_val_sum %></p>
         </div>
     </div> 
   </div>    
@@ -61,13 +65,13 @@
   <div class="container text-center">
     <div class="row">
       <div class="col">
-          <h2>Actual</h2>
+          <h3>Actual</h3>
       </div>
       <div class="col" id="bud">
-          <h2>Budget</h2>
+          <h3>Budget</h3>
       </div>
       <div class="col" id="py">
-          <h2>Last year</h2>
+          <h3>Last year</h3>
       </div>
     </div> 
   </div>    
@@ -78,21 +82,25 @@
     <div class="row">
       <div class="col">
           <p>Total Orders: 
-          <%= @result.ord_sum %> </p>
+          <%= @result_month.ord_sum %> </p>
           <p>Sales Value: £  
-          <%= @result.val_sum %></p>
+          <%= @result_month.val_sum %></p>
       </div>
       <div class="col" id="bud">
           <p>Total Orders:
-          <%= @result.ord_sum %></p>
+          <%= @result_month.bud_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result.val_sum %></p>
+          <%= @result_month.bud_val_sum %></p>
+                    <p>Sales Value Varience: £
+          <%= @result_month.val_sum - @result_month.bud_val_sum %></p>
       </div>
       <div class="col" id="py">
           <p>Total Orders:
-          <%= @result.ord_sum %></p>
+          <%= @result_month.py_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result.val_sum %></p>
+          <%= @result_month.py_val_sum %></p>
+                    <p>Sales Value Varience: £
+          <%= @result_month.val_sum - @result_month.py_val_sum %></p>
         </div>
     </div> 
   </div>    
@@ -112,13 +120,13 @@
   <div class="container text-center">
     <div class="row">
       <div class="col">
-          <h2>Actual</h2>
+          <h3>Actual</h3>
       </div>
       <div class="col" id="bud">
-          <h2>Budget</h2>
+          <h3>Budget</h3>
       </div>
       <div class="col" id="py">
-          <h2>Last year</h2>
+          <h3>Last year</h3>
       </div>
     </div> 
   </div>    
@@ -129,21 +137,25 @@
     <div class="row">
       <div class="col">
           <p>Total Orders: 
-          <%= @result.ord_sum %> </p>
+          <%= @result_year.ord_sum %> </p>
           <p>Sales Value: £  
-          <%= @result.val_sum %></p>
+          <%= @result_year.val_sum %></p>
       </div>
       <div class="col" id="bud">
           <p>Total Orders:
-          <%= @result.ord_sum %></p>
+          <%= @result_year.bud_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result.val_sum %></p>
+          <%= @result_year.bud_val_sum %></p>
+                          <p>Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.bud_val_sum %></p>
       </div>
       <div class="col" id="py">
           <p>Total Orders:
-          <%= @result.ord_sum %></p>
+          <%= @result_year.py_ord_sum %></p>
           <p>Sales Value: £
-          <%= @result.val_sum %></p>
+          <%= @result_year.py_val_sum %></p>
+                              <p>Sales Value Varience: £
+          <%= @result_year.val_sum - @result_year.py_val_sum %></p>
         </div>
     </div> 
   </div>    

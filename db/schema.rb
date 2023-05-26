@@ -10,13 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_25_130508) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_25_155841) do
   create_table "infos", force: :cascade do |t|
     t.integer "ord"
     t.integer "val"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "date"
+    t.integer "bud_ord"
+    t.integer "bud_val"
+    t.integer "py_ord"
+    t.integer "py_val"
   end
 
 end

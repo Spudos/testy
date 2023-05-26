@@ -17,24 +17,12 @@
  body {
     background: black;
     color: whitesmoke;
-    font-size: x-large;
- }
-
- div {
-    margin-top: 10px;
+    font-size: large;
  }
 
  #boardshower {
-    margin-top: 10px;
     background: black;
-    color: chartreuse;
-    margin-bottom: 25px;
- }
-
- #boardspacer {
-    background: black;
-    color: chartreuse;
-    height: 10px;
+    color: rgb(239, 6, 239);
  }
 
  #py {
@@ -46,5 +34,5 @@
  }
 
  h1 {
-    color: red;
+    color: yellow;
  }
