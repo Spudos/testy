@@ -16,13 +16,13 @@
 
  body {
     background: black;
-    color: whitesmoke;
+    color: pink;
     font-size: large;
  }
 
  #boardshower {
     background: black;
-    color: rgb(231, 227, 231);
+    color: pink;
  }
 
  #py {
@@ -43,4 +43,17 @@
 
  #neg {
    color: red;
+ }
+
+ img {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   max-width: 500px;
+ }
+
+ #header {
+   margin-top: 25px;
+   margin-bottom: 25px;
+   background: white;
+   border-radius: 15px;
  }
