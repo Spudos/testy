@@ -4,12 +4,9 @@ class InfosController < ApplicationController
   # GET /infos or /infos.json
   def index
     @infos = Info.all
-
-
     start_date = (Date.current - 5.years)
     end_date = (Date.current)
-    @result = Info.where(date: start_date..end_date).select("SUM(ord) AS ord_sum, SUM(val) AS val_sum").first
-
+    @result = Info.where(date: start_date..end_date).select("COALESCE(SUM(ord), 0) AS ord_sum, COALESCE(SUM(val), 0) AS val_sum").first
   end
 
   # GET /infos/1 or /infos/1.json
