@@ -17,10 +17,10 @@
  body {
     background: black;
     color: white;
-    font-size: 48px;
  }
 
  #boardshower {
+   font-size: 48px;
     background: black;
     color: pink;
  }
@@ -34,7 +34,7 @@
  }
 
  h1 {
-    color: yellow;
+    color: black;
  }
 
  #pos {

@@ -1,16 +1,17 @@
-<div class="container text-center">
+  <div class="container text-center" id="header">
+  <img src="/assets/Landscape Logo - 2022.png" />
 <h1>Sales Wallboard</h1>
 
 </div>
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-bs-interval="10000">
       <%= render 'sales_today' %>
     </div>
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-bs-interval="10000">
       <%= render 'sales_month' %>
     </div>
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-bs-interval="10000">
       <%= render 'sales_year' %>
     </div>
   </div>

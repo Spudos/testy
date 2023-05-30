@@ -1,9 +1,26 @@
 <p style="color: green"><%= notice %></p>
+<h3>Infos</h3>
+  <table>
+   <thead>
+<tr>
+   <th><strong>Date</strong></th>
+   <th> <strong>Ord</strong>  </th>
+   <th> <strong>Val</strong></th>
+   <th> <strong>Bud Ord</strong></th>
+   <th> <strong>Bud Val</strong></th>
+   <th> <strong>PY Ord</strong></th>
+   <th> <strong>PY Val</strong></th>
+ </tr>
+</thead>
+<tbody>
+<tr><%= render @info %></tr>
+</div>
+</tbody>
+</table>
 
-<%= render @info %>
 
 <div>
-  <%= link_to "Edit this info", edit_info_path(@info) %> |
+  <%= link_to "Edit this info", edit_info_path(@info) %>
   <%= link_to "Back to infos", infos_path %>
 
   <%= button_to "Destroy this info", @info, method: :delete %>
