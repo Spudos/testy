@@ -4,13 +4,13 @@
 </div>
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+<div class="carousel-item active" data-bs-interval="20000">
       <%= render 'sales_today', result_today: @result_today %>
     </div>
-    <div class="carousel-item active">
+<div class="carousel-item active" data-bs-interval="20000">
       <%= render 'sales_month', budget_month: @budget_month, result_month: @result_month %>
     </div>
-    <div class="carousel-item active">
+<div class="carousel-item active" data-bs-interval="20000">
       <%= render 'sales_year', result_year: @result_year %>
     </div>
   </div>
