@@ -25,15 +25,9 @@
           <p>Total Orders:
           <%= result_year.bud_ord_sum %></p>
           <p>Sales Value: £
-<<<<<<< HEAD
           <%= @result_year.bud_val_sum %></p>
           <p>
           <%if @result_year.val_sum-@result_year.bud_val_sum >= 0 %>
-=======
-          <%= result_year.bud_val_sum %></p>
-<p>
-          <%if result_year.val_sum-result_year.bud_val_sum >= 0 %>
->>>>>>> a0b7ab155c94da3587ff027b4e726355d76f66fd
           <span id="pos">
           Sales Value Varience: £
           <%= result_year.val_sum - result_year.bud_val_sum %>
